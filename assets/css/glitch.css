@@ -1,8 +1,10 @@
 .nickname {
-    transition: transform .2s;
+    @media only screen and (min-width: 880px) {
+        transition: transform .2s;
 
-    &:hover {
-        transform: scale(1.1);
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     display: grid;
@@ -17,6 +19,7 @@
     --clip-top: calc(var(--element-height) * var(--index));
     --clip-bottom: calc(var(--element-height) * var(--inverse-index));
     clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: nickname-logo 340ms cubic-bezier(.46, .29, 0, 1.24) 1 backwards calc(var(--index) * 120ms), glitch-logo 2s ease infinite 2s alternate-reverse;
 }
 
 .nickname img:nth-child(odd) {
@@ -77,6 +80,7 @@
     --clip-top: calc(var(--element-height) * var(--index));
     --clip-bottom: calc(var(--element-height) * var(--inverse-index));
     clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: nickname 340ms cubic-bezier(.46, .29, 0, 1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
 }
 
 .nickname span:nth-child(odd) {
