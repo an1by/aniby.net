@@ -1,0 +1,27 @@
+{
+  "fullstack_developer": "FullStack Developer",
+  "description.1": "Programmer with real experience, which succeeded in studying Web, Java, Python.",
+  "description.2": "There are some projects. At the moment I am actively studying Golang, Kotlin.",
+  "portfolio": "Portfolio",
+  "portfolio.check": "Check portfolio",
+  "contact": "Contact",
+  "follow": "Follow",
+  "watch": "Watch",
+  "buy": "Buy",
+  "download": "Download",
+  "portfolio.voicetranslator.title": "Voice Translator",
+  "portfolio.voicetranslator.description": "Translates your speech in Minecraft into another language in real time",
+  "portfolio.anidonatebarrier.title": "AniDonateBarrier",
+  "portfolio.anidonatebarrier.description": "When receiving a donation through DonationAlerts, it expands the barrier in Minecraft by a specified amount",
+  "portfolio.felmoncuffs.title": "Felmon Cuffs",
+  "portfolio.felmoncuffs.description": "Minecraft plugin for handcuffs with flexible config",
+
+  "nickname.1": "Aniby",
+  "nickname.2": "An1by",
+  "nickname.3": "Anibi",
+  "nickname.4": "Anubi",
+  "nickname.5": "Anibu",
+  "nickname.6": "Abibi",
+  "nickname.7": "Anubis",
+  "nickname.8": "Dmitriy"
+}

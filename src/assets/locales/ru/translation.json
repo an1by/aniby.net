@@ -1,0 +1,27 @@
+{
+  "fullstack_developer": "FullStack разработчик",
+  "description.1": "Программист с реальным опытом, преуспевший в изучении Web, Java, Python.",
+  "description.2": "Имеется несколько проектов. На данный момент активно изучаю Golang, Kotlin.",
+  "portfolio": "Портфолио",
+  "portfolio.check": "Посмотреть портфолио",
+  "contact": "Связаться",
+  "follow": "Следить",
+  "watch": "Смотреть",
+  "buy": "Купить",
+  "download": "Скачать",
+  "portfolio.voicetranslator.title": "Voice Translator",
+  "portfolio.voicetranslator.description": "Переводит вашу речь в Minecraft на другой язык в режиме реального времени",
+  "portfolio.anidonatebarrier.title": "AniDonateBarrier",
+  "portfolio.anidonatebarrier.description": "При получении пожертвования через DonationAlerts расширяет барьер в Minecraft на заданную величину",
+  "portfolio.felmoncuffs.title": "Felmon Cuffs",
+  "portfolio.felmoncuffs.description": "Плагин Minecraft на наручники с гибким конфигом",
+
+  "nickname.1": "Aniby",
+  "nickname.2": "An1by",
+  "nickname.3": "Аниби",
+  "nickname.4": "Ануби",
+  "nickname.5": "Анибу",
+  "nickname.6": "Абиби",
+  "nickname.7": "Анубис",
+  "nickname.8": "Дмитрий"
+}
