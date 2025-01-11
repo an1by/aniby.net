@@ -1,0 +1,122 @@
+.nickname {
+    transition: transform .2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.nickname img {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    --element-height: calc(100% / var(--elements) - 1px);
+    --inverse-index: calc(calc(var(--elements) - 1) - var(--index));
+    --clip-top: calc(var(--element-height) * var(--index));
+    --clip-bottom: calc(var(--element-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+}
+
+.nickname img:nth-child(odd) {
+    --glitch-translate: 8px;
+}
+
+.nickname img:nth-child(even) {
+    --glitch-translate: -8px;
+}
+
+@keyframes nickname-logo {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+        -webkit-filter: drop-shadow(-2px 3px 0 red) drop-shadow(2px -3px 0 blue);
+        filter: drop-shadow(-2px 3px 0 red) drop-shadow(2px -3px 0 blue);
+    }
+    60% {
+        opacity: 0.5;
+        transform: translateX(50%);
+    }
+    80% {
+        transform: none;
+        opacity: 1;
+        -webkit-filter: drop-shadow(-2px 3px 0 red) drop-shadow(2px -3px 0 blue);
+        filter: drop-shadow(-2px 3px 0 red) drop-shadow(2px -3px 0 blue);
+    }
+    100% {
+        -webkit-filter: none;
+        filter: none;
+    }
+}
+
+@keyframes glitch-logo {
+    0% {
+        -webkit-filter: drop-shadow(-2px 3px 0 red) drop-shadow(2px -3px 0 blue);
+        filter: drop-shadow(-2px 3px 0 red) drop-shadow(2px -3px 0 blue);
+        transform: translate(var(--glitch-translate));
+    }
+    2% {
+        -webkit-filter: drop-shadow(-2px 3px 0 red) drop-shadow(2px -3px 0 blue);
+        filter: drop-shadow(-2px 3px 0 red) drop-shadow(2px -3px 0 blue);
+    }
+    4%, 100% {
+        -webkit-filter: none;
+        filter: none;
+        transform: none;
+    }
+}
+
+.nickname span {
+    font-weight: bold;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    font-size: 4rem;
+    --element-height: calc(100% / var(--elements) - 1px);
+    --inverse-index: calc(calc(var(--elements) - 1) - var(--index));
+    --clip-top: calc(var(--element-height) * var(--index));
+    --clip-bottom: calc(var(--element-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+}
+
+.nickname span:nth-child(odd) {
+    --glitch-translate: 8px;
+}
+
+.nickname span:nth-child(even) {
+    --glitch-translate: -8px;
+}
+
+@keyframes nickname {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+        text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    }
+    60% {
+        opacity: 0.5;
+        transform: translateX(50%);
+    }
+    80% {
+        transform: none;
+        opacity: 1;
+        text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    100% {
+        text-shadow: none;
+    }
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+        transform: translate(var(--glitch-translate));
+    }
+    2% {
+        text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    4%, 100% {
+        text-shadow: none;
+        transform: none;
+    }
+}
