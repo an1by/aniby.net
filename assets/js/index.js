@@ -1,7 +1,3 @@
-function openInNewTab(url) {
-    window.open(url, '_blank').focus();
-}
-
 function createPortfolioWork(object) {
     const name = object["name"];
     const post = object["post"];
